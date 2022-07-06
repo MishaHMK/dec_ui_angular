@@ -1,0 +1,24 @@
+<button (click)="showOwner(card)" class="btn btn-primary">
+    Show
+</button>
+
+<table class="table table-striped" *ngIf = "found == true">
+    <thead>
+        <tr>
+            <th>EmployeeId</th>
+            <th>EmployeeName</th>
+            <th>EmployeeSurname</th>
+            <th>DepartmentName</th>
+            <th>DateOfJoining</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{emp.employeeId}}</td>
+            <td>{{emp.employeeName}}</td>
+            <td>{{emp.employeeSurname}}</td>
+            <td>{{emp.departmentName}}</td>
+            <td>{{emp.dateOfJoining}}</td>
+        </tr>
+    </tbody>
+</table>
